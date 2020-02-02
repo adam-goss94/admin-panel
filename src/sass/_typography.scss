@@ -1,0 +1,24 @@
+.font{
+  &-header{
+    &-page{
+      font-size: $size-basic;
+      font-weight: 400;
+      color: $color-gray-medium;
+      text-transform: uppercase;
+      padding: 20px 10px;
+    }
+
+    &-section{
+      font-size: $size-basic;
+      font-weight: 700;
+      color: $color-gray-dark;
+      padding-left: 10px;
+    }
+  }
+
+  &-text{
+    font-size: $size-medium;
+    font-weight: 300;
+    color: $color-dark;
+  }
+}
