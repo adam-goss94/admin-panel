@@ -1,0 +1,30 @@
+.btn{
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: $color-light;
+  font-size: 18px;
+  font-family: $font-main;
+  font-weight: 300;
+  cursor: pointer;
+
+  &-gray{
+    background-color: $color-gray-dark;
+
+    &:hover{
+      background-color: $color-gray-medium;
+    }
+  }
+
+  &-orange{
+    background-color: $color-orange-dark;
+
+    &:hover{
+      background-color: $color-orange-light;
+    }
+  }
+
+  &-disable{
+    background-color: $color-gray-light;
+    cursor: not-allowed;
+  }
+}
