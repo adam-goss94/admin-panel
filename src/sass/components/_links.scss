@@ -1,0 +1,21 @@
+.link{
+  font-size: $size-basic;
+
+  &,
+  &:link,
+  &:visited{
+    font-weight: 300;
+    text-decoration: none;
+    cursor: pointer;
+    color: $color-link;
+  }
+
+  &-small{
+    font-size: $size-link-small;
+  }
+
+  &:hover{
+    color: $color-orange-dark;
+  }
+
+}
