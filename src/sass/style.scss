@@ -1,15 +1,16 @@
 @import "partials/variables";
 @import "partials/mixins";
 
-@import "partials/global";
-@import "partials/typography";
-
 @import "partials/normalize";
+@import "partials/global";
+
+@import "partials/typography";
 @import "partials/layout";
 
 /* Components */
 @import "components/buttons";
 @import "components/links";
+@import "components/lists";
 
 /* Sections */
 
