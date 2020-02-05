@@ -1,25 +1,40 @@
-.list-links{
-  padding: 0;
-  margin: 0;
+.list{
   list-style-type: none;
 
   li{
-    border-top: 1px solid $color-gray-light;
-    padding: 10px 0;
     display: flex;
     justify-content: space-between;
-
-    &:last-child{
-      border-bottom: 1px solid $color-gray-light;
-    }
+    border-bottom: 1px solid $color-gray-medium;
   }
+}
 
-  i{
-    margin-right: 10px;
+.list-2-elems{
+  li .box{
+    padding: 15px 0 5px 0;
+  }
+}
 
-    &:hover{
-      color: $color-orange-dark;
-      cursor: pointer;
+.list-3-elems{
+  li{
+    &:first-child{
+      border-top: 1px solid $color-gray-medium;
+    }
+
+    .box{
+      padding: 10px;
+    }
+
+    .box-left{
+      width: 40%;
+    }
+
+    .box-center{
+      width: 50%;
+    }
+
+    .box-right{
+      width: 10%;
+      text-align: right;
     }
   }
 }

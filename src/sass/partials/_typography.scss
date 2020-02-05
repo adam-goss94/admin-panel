@@ -5,7 +5,6 @@
       font-weight: 400;
       color: $color-gray-medium;
       text-transform: uppercase;
-      padding: 20px 10px;
     }
 
     &-section{
@@ -13,7 +12,6 @@
       font-weight: 700;
       color: $color-gray-dark;
       margin: 0;
-      padding-left: 10px;
     }
   }
 
@@ -21,5 +19,13 @@
     font-size: $size-medium;
     font-weight: 300;
     color: $color-dark;
+
+    &-large{
+      font-size: $size-basic;
+    }
   }
+}
+
+.padding-left-10{
+  padding-left: 10px;
 }
