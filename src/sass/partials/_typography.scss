@@ -1,4 +1,14 @@
+h1, h2, h3{
+  margin: 0;
+  padding: 0;
+}
+
 .font{
+  &-title{
+    font-size: 22px;
+    color: $color-gray-light;
+  }
+
   &-header{
     &-page{
       font-size: $size-basic;
@@ -23,6 +33,19 @@
     &-large{
       font-size: $size-basic;
     }
+  }
+
+  &-nav{
+    font-size: $size-medium;
+    font-weight: 300;
+    color: $color-gray-medium;
+  }
+
+  &-manager-title{
+    font-size: $size-medium;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $color-gray-medium;
   }
 }
 
