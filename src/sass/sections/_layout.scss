@@ -5,4 +5,33 @@
   @media(max-width: 767px) {
     padding: 0 0 0 50px;
   }
+
+  section{
+    display: none;
+  }
+
+  > .active{
+    display: block;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media(max-width: 767px) {
+  @include grid('sm');
+}
+
+@media(min-width: 768px) {
+  @include grid('md');
+}
+
+@media(min-width: 992px) {
+  @include grid('lg');
+}
+
+@media(min-width: 1200px) {
+  @include grid('xl');
 }

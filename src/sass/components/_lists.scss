@@ -4,6 +4,7 @@
   li{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid $color-gray-medium;
   }
 }
@@ -16,6 +17,8 @@
 
 .list-3-elems{
   li{
+    min-height: 50px;
+
     &:first-child{
       border-top: 1px solid $color-gray-medium;
     }
@@ -29,16 +32,22 @@
     }
 
     .box-center{
-      width: 50%;
+      width: 40%;
     }
 
     .box-right{
-      width: 10%;
+      width: 20%;
       text-align: right;
     }
 
     i{
+      margin-right: 15px;
       display: none;
+
+      @media(max-width: 767px) {
+        display: inline-block;
+        margin-right: 5px;
+      }
     }
 
     &:hover{
