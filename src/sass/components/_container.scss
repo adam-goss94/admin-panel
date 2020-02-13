@@ -1,0 +1,27 @@
+.container{
+  margin: 15px;
+  background-color: $color-light;
+
+  &-header{
+    padding: 10px;
+
+    h2{
+      @extend .font-header-page;
+    }
+  }
+
+  &-body{
+    border-top: 1px solid $color-gray-medium;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-box{
+      padding-top: 20px;
+
+      &:last-child{
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
