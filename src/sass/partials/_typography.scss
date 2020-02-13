@@ -10,6 +10,10 @@ h1, h2, h3{
   }
 
   &-header{
+    font-size: $size-basic;
+    font-weight: 300;
+    color: $color-gray-dark;
+
     &-page{
       font-size: $size-basic;
       font-weight: 400;

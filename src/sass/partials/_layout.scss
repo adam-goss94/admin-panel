@@ -1,32 +1,14 @@
-header{
-  width: calc(100vw - 175px);
-  height: 60px;
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: $color-light;
+
+.pages{
+  padding: 60px 0 0 175px;
+
+  @media(max-width: 767px) {
+    padding-left: 50px;
+  }
 }
 
 .container{
-  width: 100%;
-  margin: 20px;
+  margin: 15px;
   padding: 10px;
   background-color: $color-light;
-}
-
-
-@media(max-width: 767px) {
-  @include grid('sm');
-}
-
-@media(min-width: 768px) {
-  @include grid('md');
-}
-
-@media(min-width: 992px) {
-  @include grid('lg');
-}
-
-@media(min-width: 1200px) {
-  @include grid('xl');
 }

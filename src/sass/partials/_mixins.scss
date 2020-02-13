@@ -14,3 +14,18 @@
   }
 }
 
+@mixin center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin dot($size, $top, $right){
+  position: absolute;
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  right: $right;
+  top: $top;
+}

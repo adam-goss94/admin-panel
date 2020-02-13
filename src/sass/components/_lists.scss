@@ -64,10 +64,27 @@
   li{
     padding: 10px 15px;
 
-    span{
-      margin-left: 15px;
+    @media(max-width: 767px) {
+      display: flex;
+      justify-content: center;
     }
 
+    span{
+      margin-left: 15px;
+      @media(max-width: 767px) {
+        display: none;
+      }
+    }
 
+    &:hover{
+      border-left: 4px solid $color-orange-dark;
+      cursor: pointer;
+      color: $color-light;
+    }
+  }
+
+  .active{
+    border-left: 4px solid $color-orange-dark;
+    color: $color-light;
   }
 }

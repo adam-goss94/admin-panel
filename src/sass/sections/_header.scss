@@ -1,0 +1,46 @@
+header{
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: $color-light;
+
+  ul{
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+  }
+
+  li{
+    display: flex;
+    align-items: center;
+    border-left: 1px solid $color-gray-dark;
+    padding: 0 20px;
+
+    .dot{
+      position: relative;
+    }
+
+    .notification-dot{
+      @include dot(8px, 2px, 2px);
+      background-color: $color-orange-dark;
+    }
+
+    .box{
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      i{
+        margin: 5px;
+      }
+    }
+
+    &:hover{
+      cursor: pointer;
+      color: $color-orange-dark;
+    }
+  }
+}
