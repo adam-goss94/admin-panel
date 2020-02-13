@@ -5,14 +5,15 @@
 @import "partials/global";
 
 @import "partials/typography";
-@import "partials/layout";
 
 /* Components */
+@import "components/container-header";
 @import "components/buttons";
 @import "components/links";
 @import "components/lists";
 
 /* Sections */
+@import "sections/layout";
 @import "sections/header";
 @import "sections/aside";
 
