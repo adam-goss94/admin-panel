@@ -18,6 +18,15 @@
 .row {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 20px;
+
+  &:last-child{
+    padding-bottom: 20px;
+  }
+}
+
+.wrapper{
+  margin: 0 auto;
 }
 
 @media(max-width: 767px) {
