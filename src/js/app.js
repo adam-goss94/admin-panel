@@ -1,4 +1,30 @@
 const app = {
+  initEventListeners: function(){
+    const thisApp = this;
+    thisApp.navWrapper = document.querySelector('.navigation');
+    thisApp.pages = thisApp.navWrapper.querySelectorAll('li');
+    thisApp.sections = document.querySelectorAll('section');
+
+    for(let page of thisApp.pages){
+      page.addEventListener('click', function(){
+        const sectionId = page.getAttribute('data-sectionId');
+
+        for(let activePage of thisApp.pages){
+          activePage.classList.remove('active');
+        }
+        page.classList.add('active');
+
+        for(let section of thisApp.sections){
+          if(sectionId == section.getAttribute('id')){
+            section.classList.add('active');
+          }else{
+            section.classList.remove('active');
+          }
+        }
+      });
+    }
+  },
+
   initChart: function(){
     const thisApp = this;
 
@@ -42,14 +68,24 @@ const app = {
     const thisApp = this;
     thisApp.dateFrom = document.querySelector('.date-from');
     thisApp.dateTo = document.querySelector('.date-to');
+    thisApp.refresh = document.querySelector('.date-submit');
+
     thisApp.dateToday = new Date().toISOString().slice(0,10);
     thisApp.dateYesterday = dateYesterday(thisApp.dateToday);
 
     thisApp.dateFrom.value = thisApp.dateYesterday;
     thisApp.dateTo.value = thisApp.dateToday;
+
+    thisApp.refresh.addEventListener('click', function(event){
+      event.preventDefault();
+      thisApp.dateFrom.value = thisApp.dateYesterday;
+      thisApp.dateTo.value = thisApp.dateToday;
+    });
+
   },
 
   init: function(){
+    this.initEventListeners();
     this.initChart();
     this.initDate();
   }

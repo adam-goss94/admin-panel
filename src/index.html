@@ -46,13 +46,13 @@
     </div>
     <nav class="navigation">
       <ul class="navigation-list font-nav">
-        <li class="active"><i class="icon-general"></i><span>General</span></li>
-        <li><i class="icon-details"></i><span>Details</span></li>
-        <li><i class="icon-links"></i><span>Links</span></li>
-        <li><i class="icon-banners"></i><span>Banners</span></li>
-        <li><i class="icon-personaldata"></i><span>Personal data</span></li>
-        <li><i class="icon-payout"></i><span>Payout</span></li>
-        <li><i class="icon-postback"></i><span>Postback</span></li>
+        <li data-sectionId="general" class="active"><i class="icon-general"></i><span>General</span></li>
+        <li data-sectionId="details"><i class="icon-details"></i><span>Details</span></li>
+        <li data-sectionId="links"><i class="icon-links"></i><span>Links</span></li>
+        <li data-sectionId="banners"><i class="icon-banners"></i><span>Banners</span></li>
+        <li data-sectionId="personal-data"><i class="icon-personaldata"></i><span>Personal data</span></li>
+        <li data-sectionId="payout"><i class="icon-payout"></i><span>Payout</span></li>
+        <li data-sectionId="postback"><i class="icon-postback"></i><span>Postback</span></li>
       </ul>
       <div class="navigation-manager">
         <div class="navigation-manager__tittle">
@@ -70,7 +70,7 @@
   </aside>
 
   <div class="pages">
-    <section class="general active">
+    <section class="active" id="general">
       <div class="container">
         <div class="container-header">
           <h2>General statistic</h2>
@@ -84,8 +84,9 @@
                   <div class="input-wrapper">
                     <input type="date" class="input font-text date-from">
                     <input type="date" class="input font-text date-to">
+                    <i class="icon-calendar"></i>
                   </div>
-                  <button type="submit" class="btn btn-orange"><i class="icon-refresh"></i></button>
+                  <button type="submit" class="btn btn-orange date-submit"><i class="icon-refresh"></i></button>
                 </form>
               </div>
             </div>
@@ -223,6 +224,202 @@
                 <li>
                   <div class="box box-left">
                     <h2 class="font-header-section">Your site</h2>
+                  </div>
+                  <div class="box box-center">
+                    <a href="#" class="link">https://www.yoursite.com</a>
+                  </div>
+                  <div class="box box-right font-header-section">
+                    <i class="icon-links"></i>
+                    <i class="icon-trash"></i>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="container-body-box row">
+            <div class="wrapper">
+              <button class="btn btn-orange">+ add new</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="links" id="links">
+      <div class="container">
+        <div class="container-header">
+          <h2>Links</h2>
+        </div>
+        <div class="container-body">
+          <div class="container-body-box row">
+            <div class="wrapper">
+              <button class="btn btn-orange">+ add new</button>
+            </div>
+          </div>
+          <div class="container-body-box row">
+            <div class="wrapper col-sm-11 col-md-11 col-lg-9 col-xl-8">
+              <ul class="list list-3-elems">
+                <li>
+                  <div class="box box-left">
+                    <h2 class="font-header-section">Home page</h2>
+                  </div>
+                  <div class="box box-center">
+                    <a href="#" class="link">https://www.homepage.com</a>
+                  </div>
+                  <div class="box box-right font-header-section">
+                    <i class="icon-links"></i>
+                    <i class="icon-trash"></i>
+                  </div>
+                </li>
+                <li>
+                  <div class="box box-left">
+                    <h2 class="font-header-section">Currently offer</h2>
+                  </div>
+                  <div class="box box-center">
+                    <a href="#" class="link">https://www.currently.com</a>
+                  </div>
+                  <div class="box box-right font-header-section">
+                    <i class="icon-links"></i>
+                    <i class="icon-trash"></i>
+                  </div>
+                </li>
+                <li>
+                  <div class="box box-left">
+                    <h2 class="font-header-section">Your site</h2>
+                  </div>
+                  <div class="box box-center">
+                    <a href="#" class="link">https://www.yoursite.com</a>
+                  </div>
+                  <div class="box box-right font-header-section">
+                    <i class="icon-links"></i>
+                    <i class="icon-trash"></i>
+                  </div>
+                </li>
+                <li>
+                  <div class="box box-left">
+                    <h2 class="font-header-section">Home page</h2>
+                  </div>
+                  <div class="box box-center">
+                    <a href="#" class="link">https://www.homepage.com</a>
+                  </div>
+                  <div class="box box-right font-header-section">
+                    <i class="icon-links"></i>
+                    <i class="icon-trash"></i>
+                  </div>
+                </li>
+                <li>
+                  <div class="box box-left">
+                    <h2 class="font-header-section">Currently offer</h2>
+                  </div>
+                  <div class="box box-center">
+                    <a href="#" class="link">https://www.currently.com</a>
+                  </div>
+                  <div class="box box-right font-header-section">
+                    <i class="icon-links"></i>
+                    <i class="icon-trash"></i>
+                  </div>
+                </li>
+                <li>
+                  <div class="box box-left">
+                    <h2 class="font-header-section">Your site</h2>
+                  </div>
+                  <div class="box box-center">
+                    <a href="#" class="link">https://www.yoursite.com</a>
+                  </div>
+                  <div class="box box-right font-header-section">
+                    <i class="icon-links"></i>
+                    <i class="icon-trash"></i>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="container-body-box row">
+            <div class="wrapper">
+              <button class="btn btn-orange">+ add new</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banners" id="banners">
+      <div class="container">
+        <div class="container-header">
+          <h2>Banners</h2>
+        </div>
+        <div class="container-body">
+          <div class="container-body-box row">
+            <div class="wrapper">
+              <button class="btn btn-orange">+ add new</button>
+            </div>
+          </div>
+          <div class="container-body-box row">
+            <div class="wrapper col-sm-11 col-md-11 col-lg-9 col-xl-8">
+              <ul class="list list-3-elems">
+                <li>
+                  <div class="box box-left">
+                    <h2 class="font-header-section">First banner</h2>
+                  </div>
+                  <div class="box box-center">
+                    <a href="#" class="link">https://www.homepage.com</a>
+                  </div>
+                  <div class="box box-right font-header-section">
+                    <i class="icon-links"></i>
+                    <i class="icon-trash"></i>
+                  </div>
+                </li>
+                <li>
+                  <div class="box box-left">
+                    <h2 class="font-header-section">Second banner</h2>
+                  </div>
+                  <div class="box box-center">
+                    <a href="#" class="link">https://www.currently.com</a>
+                  </div>
+                  <div class="box box-right font-header-section">
+                    <i class="icon-links"></i>
+                    <i class="icon-trash"></i>
+                  </div>
+                </li>
+                <li>
+                  <div class="box box-left">
+                    <h2 class="font-header-section">Third banner</h2>
+                  </div>
+                  <div class="box box-center">
+                    <a href="#" class="link">https://www.yoursite.com</a>
+                  </div>
+                  <div class="box box-right font-header-section">
+                    <i class="icon-links"></i>
+                    <i class="icon-trash"></i>
+                  </div>
+                </li>
+                <li>
+                  <div class="box box-left">
+                    <h2 class="font-header-section">Fourth banner</h2>
+                  </div>
+                  <div class="box box-center">
+                    <a href="#" class="link">https://www.homepage.com</a>
+                  </div>
+                  <div class="box box-right font-header-section">
+                    <i class="icon-links"></i>
+                    <i class="icon-trash"></i>
+                  </div>
+                </li>
+                <li>
+                  <div class="box box-left">
+                    <h2 class="font-header-section">Fifth banner</h2>
+                  </div>
+                  <div class="box box-center">
+                    <a href="#" class="link">https://www.currently.com</a>
+                  </div>
+                  <div class="box box-right font-header-section">
+                    <i class="icon-links"></i>
+                    <i class="icon-trash"></i>
+                  </div>
+                </li>
+                <li>
+                  <div class="box box-left">
+                    <h2 class="font-header-section">Sixth banner</h2>
                   </div>
                   <div class="box box-center">
                     <a href="#" class="link">https://www.yoursite.com</a>

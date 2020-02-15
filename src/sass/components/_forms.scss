@@ -1,0 +1,33 @@
+form.data-range{
+  display: flex;
+
+  .input-wrapper{
+    border: 1px solid $color-gray-medium;
+    border-radius: 5px;
+    margin-right: 20px;
+    position: relative;
+
+    i{
+      @extend .font-text;
+      position: absolute;
+      z-index: 0;
+      right: 10px;
+      top: 15px;
+    }
+
+    &::after{
+      content: '';
+      @include center;
+      height: 80%;
+      width: 1px;
+      background-color: $color-gray-medium;
+    }
+  }
+
+  input{
+    border: 2px solid transparent;
+    height: 100%;
+    background-color: $color-light;
+    padding-right: 25px;
+  }
+}

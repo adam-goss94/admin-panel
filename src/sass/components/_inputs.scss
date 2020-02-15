@@ -1,37 +1,17 @@
-form.data-range{
-  display: flex;
-
-  .input-wrapper{
-    border: 1px solid $color-gray-medium;
-    border-radius: 5px;
-    margin-right: 20px;
-    position: relative;
-
-    &::after{
-      content: '';
-      @include center;
-      height: 80%;
-      width: 1px;
-      background-color: $color-gray-medium;
-    }
-  }
-
-
-  input{
-    border: none;
-    height: 100%;
-    background-color: $color-light;
-  }
-
-
-}
-
 .input{
   outline: none;
   padding: 10px;
+  border: 2px solid $color-gray-dark;
+  border-radius: 5px;
+  position: relative;
+
+  &:invalid{
+    border: 2px solid $color-red-dark;
+  }
 
   &:hover{
-    outline: 2px solid $color-gray-dark;
+    border: 2px solid $color-gray-dark;
     cursor: pointer;
   }
 }
+
