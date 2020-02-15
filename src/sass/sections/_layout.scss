@@ -27,6 +27,14 @@
 
 .wrapper{
   margin: 0 auto;
+
+  > .row{
+    padding-top: 0;
+
+    &:last-child{
+      padding-bottom: 0;
+    }
+  }
 }
 
 @media(max-width: 767px) {
