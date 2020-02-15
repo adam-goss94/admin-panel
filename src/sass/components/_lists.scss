@@ -71,8 +71,10 @@
   padding-bottom: 25px;
   border-bottom: 1px solid $color-dark;
 
+
   li{
     padding: 10px 15px;
+    transition: all .3s;
 
     @media(max-width: 767px) {
       display: flex;

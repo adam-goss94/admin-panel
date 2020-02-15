@@ -6,6 +6,7 @@ aside{
   top: 0;
   overflow: hidden;
   z-index: 100;
+  transition: $transition;
 
   .aside-header{
     height: 60px;
@@ -33,6 +34,7 @@ aside{
     flex-direction: column;
     padding-left: 15px;
     margin-top: 25px;
+    transition: $transition;
 
     @media(max-width: 767px) {
       display: none;

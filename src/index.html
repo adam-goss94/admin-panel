@@ -79,7 +79,15 @@
         <div class="container-body">
           <div class="row">
             <div class="wrapper">
-              TUTAJ BEDZIE DATA
+              <div class="row">
+                <form class="data-range">
+                  <div class="input-wrapper">
+                    <input type="date" class="input font-text date-from">
+                    <input type="date" class="input font-text date-to">
+                  </div>
+                  <button type="submit" class="btn btn-orange"><i class="icon-refresh"></i></button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -129,8 +137,9 @@
                 </ul>
               </div>
 
-              <div class="row">
-                TUTAJ WYKRES
+              <div class="row margin-both">
+                <h3 class="font-header-section">Earnings chart</h3>
+                <canvas id="myChart"></canvas>
               </div>
             </div>
           </div>
@@ -187,6 +196,42 @@
                     <i class="icon-trash"></i>
                   </div>
                 </li>
+                <li>
+                  <div class="box box-left">
+                    <h2 class="font-header-section">Home page</h2>
+                  </div>
+                  <div class="box box-center">
+                    <a href="#" class="link">https://www.homepage.com</a>
+                  </div>
+                  <div class="box box-right font-header-section">
+                    <i class="icon-links"></i>
+                    <i class="icon-trash"></i>
+                  </div>
+                </li>
+                <li>
+                  <div class="box box-left">
+                    <h2 class="font-header-section">Currently offer</h2>
+                  </div>
+                  <div class="box box-center">
+                    <a href="#" class="link">https://www.currently.com</a>
+                  </div>
+                  <div class="box box-right font-header-section">
+                    <i class="icon-links"></i>
+                    <i class="icon-trash"></i>
+                  </div>
+                </li>
+                <li>
+                  <div class="box box-left">
+                    <h2 class="font-header-section">Your site</h2>
+                  </div>
+                  <div class="box box-center">
+                    <a href="#" class="link">https://www.yoursite.com</a>
+                  </div>
+                  <div class="box box-right font-header-section">
+                    <i class="icon-links"></i>
+                    <i class="icon-trash"></i>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
@@ -200,5 +245,7 @@
     </section>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script src="js/app.js" type="module"></script>
 </body>
 </html>
