@@ -1,16 +1,18 @@
 .input{
+  @extend .font-text;
+
   outline: none;
   padding: 10px;
-  border: 2px solid $color-gray-dark;
+  border: 1px solid $color-gray-medium;
   border-radius: 5px;
   position: relative;
 
   &:invalid{
-    border: 2px solid $color-red-dark;
+    border: 1px solid $color-red-dark;
   }
 
   &:hover{
-    border: 2px solid $color-gray-dark;
+    border: 1px solid $color-gray-dark;
     cursor: pointer;
   }
 }

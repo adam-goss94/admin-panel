@@ -44,13 +44,13 @@ form.data-range{
   }
 
   input{
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     height: 100%;
     background-color: $color-light;
     padding-right: 25px;
 
     @media(max-width: 572px) {
-      border: 2px solid $color-gray-medium;
+      border: 1px solid $color-gray-medium;
       margin-bottom: 10px;
       padding-right: 0;
     }
