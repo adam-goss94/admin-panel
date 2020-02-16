@@ -246,16 +246,28 @@
 
     <div class="container-body">
       <div class="row">
-        <div class="wrapper">
-          <label for="data-input">Data input:</label>
-          <input type="date" class="input" id="data-input">
-        </div>
-      </div>
-      <div class="row">
-        <div class="wrapper">
-          <label for="password-input">Password input:</label>
-          <input type="password" class="input" id="password-input">
-        </div>
+        <form class="form-wrapper">
+          <div class="row">
+            <label for="data-input" class="input-label">Data input:</label>
+            <input type="date" name="data-input" class="input" id="data-input">
+          </div>
+          <div class="row">
+            <label for="password-input" class="input-label">Password input:</label>
+            <input type="password" name="password-input" class="input" id="password-input">
+          </div>
+          <div class="row">
+            <label for="email-input" class="input-label">Email input:</label>
+            <input type="email" name="email-input" class="input" id="email-input">
+          </div>
+          <div class="row">
+            <label for="tel-input" class="input-label">Phone input:</label>
+            <input type="tel" name="tel-input" class="input" id="tel-input" pattern="[0-9]{3}[0-9]{3}[0-9]{3}">
+          </div>
+          <div class="row">
+            <label for="text-input" class="input-label">Text input:</label>
+            <input type="text" name="text-input" class="input" id="text-input">
+          </div>
+        </form>
       </div>
     </div>
   </div>
