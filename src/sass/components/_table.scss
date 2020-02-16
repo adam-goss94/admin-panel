@@ -1,0 +1,62 @@
+.table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  text-align: center;
+
+  &-wrapper{
+    overflow-x: auto;
+  }
+
+  &-head{
+    @extend .font-header-section;
+
+    &-elem{
+      padding: 10px;
+      white-space: nowrap;
+
+      i{
+        @extend .font-text;
+
+        margin-left: 5px;
+        opacity: 0;
+      }
+
+      &:hover{
+        cursor: pointer;
+        color: $color-dark;
+        background-color: $color-gray-light;
+
+        i{
+          opacity: 1;
+        }
+      }
+    }
+
+
+  }
+
+  &-body{
+    tr{
+      display: table-row;
+      border-top: 1px solid $color-gray-light;
+      height: 55px;
+
+      &:last-child{
+        border-bottom: 1px solid $color-gray-light;
+      }
+
+      &:hover{
+        cursor: pointer;
+        background-color: $color-gray-light;
+      }
+    }
+
+    &:before {
+      content: '@';
+      display: block;
+      line-height: 20px;
+      text-indent: -99999px;
+    }
+  }
+}
