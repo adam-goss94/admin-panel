@@ -96,12 +96,10 @@
   li{
     padding: 10px 15px;
     transition: all .3s;
+    white-space: nowrap;
 
     span{
-      margin-left: 15px;
-      @media(max-width: 767px) {
-        display: none;
-      }
+      margin-left: 18px;
     }
 
     &:hover{

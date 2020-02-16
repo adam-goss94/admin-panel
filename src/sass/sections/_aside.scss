@@ -13,6 +13,7 @@ aside{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    white-space: nowrap;
 
     h1{
       @media(max-width: 767px) {
@@ -21,12 +22,19 @@ aside{
     }
 
     .hamburger{
+      display: none;
       cursor: pointer;
 
       &:hover{
         color: $color-orange-dark;
       }
+
+      @media(max-width: 767px) {
+        display: block;
+        order: 0;
+      }
     }
+
   }
 
   .navigation-manager{
@@ -61,6 +69,35 @@ aside{
   }
 
   @media(max-width: 767px) {
-    width: 50px;
+    width: 45px;
+  }
+}
+
+
+.show{
+  @media(max-width: 767px) {
+    width: 175px;
+  }
+
+  .aside-header{
+    h1{
+      @media(max-width: 767px) {
+        opacity: 1;
+        order: 0;
+      }
+    }
+
+    .hamburger{
+      @media(max-width: 767px) {
+        order: 1;
+        margin-left: 0;
+      }
+    }
+  }
+
+  .navigation-manager{
+    @media(max-width: 767px) {
+      display: flex;
+    }
   }
 }
