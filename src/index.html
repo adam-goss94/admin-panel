@@ -82,8 +82,8 @@
               <div class="row">
                 <form class="data-range">
                   <div class="input-wrapper">
-                    <input type="date" class="input date-from">
-                    <input type="date" class="input date-to">
+                    <input type="date" class="input input-data-range">
+                    <input type="date" class="input input-data-range">
                     <i class="icon-calendar"></i>
                   </div>
                   <button type="submit" class="btn btn-orange date-submit"><i class="icon-refresh"></i></button>
@@ -245,7 +245,7 @@
       </div>
     </section>
 
-    <section class="links" id="links">
+    <section id="links">
       <div class="container">
         <div class="container-header">
           <h2>Links</h2>
@@ -343,7 +343,7 @@
       </div>
     </section>
 
-    <section class="banners" id="banners">
+    <section id="banners">
       <div class="container">
         <div class="container-header">
           <h2>Banners</h2>
@@ -438,6 +438,83 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section id="personal-data">
+      <div class="container">
+        <div class="container-header">
+          <h2>Personal data</h2>
+        </div>
+
+        <div class="container-body">
+          <div class="row">
+            <form class="form-wrapper">
+              <div class="row">
+                <label for="first-name" class="input-label">Name</label>
+                <input type="text" name="first-name" class="input" id="first-name" minlength="2" maxlength="25">
+              </div>
+              <div class="row">
+                <label for="last-name" class="input-label">Surname</label>
+                <input type="text" name="last-name" class="input" id="last-name" minlength="2" maxlength="25">
+              </div>
+              <div class="row">
+                <label for="email" class="input-label">E-mail</label>
+                <input type="email" name="email" class="input" id="email">
+              </div>
+              <div class="row">
+                <label for="phone-number" class="input-label">Phone number</label>
+                <input type="tel" name="phone-number" class="input" id="phone-number" pattern="[0-9]{3}[0-9]{3}[0-9]{3}">
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="container-body">
+          <div class="row">
+            <form class="form-wrapper">
+              <div class="row">
+                <label for="skype" class="input-label">Skype</label>
+                <input type="text" name="skype" class="input" id="skype" minlength="2" maxlength="25">
+              </div>
+              <div class="row">
+                <label for="icq" class="input-label">ICQ</label>
+                <input type="text" name="icq" class="input" id="icq" minlength="2" maxlength="25">
+              </div>
+              <div class="row">
+                <label for="msn" class="input-label">Msn</label>
+                <input type="text" name="msn" class="input" id="msn" minlength="2" maxlength="25">
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="container-body">
+          <div class="row">
+            <form class="form-wrapper">
+              <div class="row">
+                <label for="wallet" class="input-label">Wallet</label>
+                <input type="number" name="wallet" class="input" id="wallet" step="0.01">
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="container-body">
+          <div class="row">
+            <form class="form-wrapper">
+              <div class="row">
+                <label for="password-first" class="input-label">Password</label>
+                <input type="password" name="password-first" class="input" id="password-first">
+              </div>
+              <div class="row">
+                <label for="password-repeat" class="input-label">Repeat</label>
+                <input type="password" name="password-repeat" class="input" id="password-repeat">
+              </div>
+            </form>
+          </div>
+        </div>
+
       </div>
     </section>
   </div>

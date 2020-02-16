@@ -42,20 +42,6 @@ form.data-range{
       flex-direction: column;
     }
   }
-
-  input{
-    border: 1px solid transparent;
-    height: 100%;
-    background-color: $color-light;
-    padding-right: 25px;
-    width: auto;
-
-    @media(max-width: 572px) {
-      border: 1px solid $color-gray-medium;
-      margin-bottom: 10px;
-      padding-right: 0;
-    }
-  }
 }
 
 .form-wrapper{
