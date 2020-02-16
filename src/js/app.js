@@ -4,6 +4,11 @@ const app = {
     thisApp.navWrapper = document.querySelector('.navigation');
     thisApp.pages = thisApp.navWrapper.querySelectorAll('li');
     thisApp.sections = document.querySelectorAll('section');
+    thisApp.hamburger = document.querySelector('.hamburger');
+
+    thisApp.hamburger.addEventListener('click', function(){
+      document.querySelector('aside').classList.toggle('show');
+    });
 
     for(let page of thisApp.pages){
       page.addEventListener('click', function(){
@@ -66,15 +71,20 @@ const app = {
 
   initDate: function(){
     const thisApp = this;
-    thisApp.dateFrom = document.querySelector('.date-from');
-    thisApp.dateTo = document.querySelector('.date-to');
+    thisApp.dateFrom = document.querySelectorAll('.date-from');
+    thisApp.dateTo = document.querySelectorAll('.date-to');
     thisApp.refresh = document.querySelector('.date-submit');
 
     thisApp.dateToday = new Date().toISOString().slice(0,10);
     thisApp.dateYesterday = dateYesterday(thisApp.dateToday);
 
-    thisApp.dateFrom.value = thisApp.dateYesterday;
-    thisApp.dateTo.value = thisApp.dateToday;
+    for(let dateFrom of thisApp.dateFrom){
+      dateFrom.value = thisApp.dateYesterday;
+    }
+
+    for(let dateTo of thisApp.dateTo){
+      dateTo.value = thisApp.dateToday;
+    }
 
     thisApp.refresh.addEventListener('click', function(event){
       event.preventDefault();
