@@ -7,6 +7,12 @@ h1, h2, h3{
   &-title{
     font-size: 22px;
     color: $color-gray-light;
+    font-family: $font-title;
+  }
+
+  &-hamburger{
+    font-size: 22px;
+    color: $color-gray-light;
   }
 
   &-header{
