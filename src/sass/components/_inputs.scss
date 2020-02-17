@@ -45,3 +45,19 @@
     margin-bottom: 5px;
   }
 }
+
+input[type="date"]{
+  min-width: 180px;
+
+  @media(max-width: 572px) {
+    text-align: center;
+  }
+}
+
+input[type="date"]::-webkit-clear-button {
+  display: none;
+}
+
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
