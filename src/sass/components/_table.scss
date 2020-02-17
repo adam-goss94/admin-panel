@@ -43,6 +43,11 @@
       border-top: 1px solid $color-gray-light;
       height: 55px;
 
+      td{
+        text-align: left;
+        padding-left: 10px;
+      }
+
       &:last-child{
         border-bottom: 1px solid $color-gray-light;
       }
