@@ -3,6 +3,7 @@ header{
   height: 60px;
   position: fixed;
   background-color: $color-light;
+  z-index: 99;
 
   ul{
     display: flex;
