@@ -62,6 +62,31 @@
         }
       }
     }
+
+    @media(max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .box-left{
+        width: 100%;
+        text-align: center;
+      }
+
+      .box-center{
+        width: 100%;
+        text-align: center;
+      }
+
+      .box-right{
+        width: 100%;
+        text-align: center;
+      }
+
+      i:first-child{
+        margin-right: 10px;
+      }
+    }
   }
 }
 
