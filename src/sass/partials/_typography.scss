@@ -20,6 +20,10 @@ h1, h2, h3{
     font-weight: 300;
     color: $color-gray-dark;
 
+    @media(max-width: 767px) {
+      font-size: $size-small;
+    }
+
     &-page{
       font-size: $size-basic;
       font-weight: 400;

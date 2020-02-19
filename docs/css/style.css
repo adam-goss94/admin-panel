@@ -375,6 +375,12 @@ h1, h2, h3 {
   color: #979797;
 }
 
+@media (max-width: 767px) {
+  .font-header {
+    font-size: 12px;
+  }
+}
+
 .font-header-page, .container-header h2 {
   font-size: 16px;
   font-weight: 400;
@@ -855,7 +861,7 @@ form.data-range .input-wrapper::after {
 
 @media (max-width: 767px) {
   .pages {
-    padding: 0 0 60px 45px;
+    padding: 0 0 40px 45px;
   }
 }
 
@@ -1207,7 +1213,11 @@ header li:hover {
 
 @media (max-width: 767px) {
   header {
+    height: 40px;
     bottom: 0;
+  }
+  header li {
+    padding: 0 7px;
   }
 }
 

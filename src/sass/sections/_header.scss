@@ -44,6 +44,11 @@ header{
   }
 
   @media(max-width: 767px) {
+    height: 40px;
     bottom: 0;
+
+    li{
+      padding: 0 7px;
+    }
   }
 }
